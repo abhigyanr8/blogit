@@ -11,7 +11,7 @@ public class PostRequest
 {
 	private String title;
 	private String content;
-	private String userId;
+	private long userId;
 	private String medialink;
 
 }

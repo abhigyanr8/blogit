@@ -23,10 +23,10 @@ public class Post
 {
 	@Id
 
-	private int id;
+	private long id;
 	private String title;
 	private String content;
-	private String userId;
+	private long userId;
 	private String medialink;
 	@OneToMany(cascade=CascadeType.ALL)
 	@JoinColumn(name="pc_fid" ,referencedColumnName="id")
