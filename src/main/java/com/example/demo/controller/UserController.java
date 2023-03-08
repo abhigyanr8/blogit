@@ -59,10 +59,10 @@ public class UserController
 	}
 	
 	//Edit User Details
-	@PutMapping( "/{id}" )
-	public User updateUser( @RequestParam("id") long id,@RequestBody @Valid UserRequest userrequest)
-	{
-		User updatedUser=userService.updateUserById(id,userrequest);
-        return updatedUser;
-	}
+//	@PutMapping( "/{id}" )
+//	public User updateUser( @RequestParam("id") long id,@RequestBody @Valid UserRequest userrequest)
+//	{
+//		User updatedUser=userService.updateUserById(id,userrequest);
+//        return updatedUser;
+//	}
 }
