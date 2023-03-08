@@ -25,7 +25,7 @@ public class PostController
 	
 	//To add a post
 	
-	@PostMapping("/")
+	@PostMapping("/post")
 	public Post addPost(@RequestBody @Valid PostRequest postRequest)
 	{
 		 return postService.addUser(postRequest);

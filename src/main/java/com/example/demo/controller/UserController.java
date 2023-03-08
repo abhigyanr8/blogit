@@ -52,14 +52,14 @@ public class UserController
 	}
 	//Get User By Id
     
-	@GetMapping("/{id}")
+	@GetMapping("/user/{id}")
 	public Optional<User> getUserById(@PathVariable("id") long id)
 	{
 	    return userService.getUserbyId(id);
 	}
 	
 	//Edit User Details
-	@PutMapping( "/{id}" )
+	@PutMapping( "/user/{id}" )
 	public User updateUser( @RequestParam("id") long id,@RequestBody @Valid UserRequest userrequest)
 	{
 		User updatedUser=userService.updateUserById(id,userrequest);
