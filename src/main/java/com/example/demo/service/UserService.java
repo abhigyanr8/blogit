@@ -56,6 +56,14 @@ public class UserService
 					userRepo.deleteById(id);
 				
 				}
+    //To update User
+				public User updateUserById(long id,UserRequest userRequest) 
+				{
+					  
+					  User user = User.build(id,userRequest.getName(),userRequest.getEmail(),userRequest.getPassword(),userRequest.getAbout(),null);
+					  return userRepo.save(user);
+					
+				}
 		
 	  
 
