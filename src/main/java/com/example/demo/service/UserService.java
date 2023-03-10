@@ -2,6 +2,7 @@ package com.example.demo.service;
 
 
 import java.util.Date;
+
 import java.util.List;
 import java.util.Optional;
 import java.util.concurrent.atomic.AtomicLong;
@@ -9,7 +10,8 @@ import java.util.concurrent.atomic.AtomicLong;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.demo.Model.User;
+
+import com.example.demo.Model.Users;
 import com.example.demo.dto.UserRequest;
 import com.example.demo.repo.UserRepo;
 
@@ -24,11 +26,11 @@ public class UserService
 	 
 	//To add user
 	  
-	   public User addUser(UserRequest userRequest)
+	   public Users addUser(UserRequest userRequest)
 	     {
 		     
 		       long id =  new Date().getTime();
-		       User user = User.build(id,userRequest.getName(),userRequest.getEmail(),userRequest.getPassword(),userRequest.getAbout(),null);
+		       Users user = Users.build(id,userRequest.getName(),userRequest.getEmail(),userRequest.getPassword(),userRequest.getAbout(),null);
 		       System.out.println(id);
 		       System.out.println(new Date().getTime());
 		       return userRepo.save(user);
@@ -37,7 +39,7 @@ public class UserService
 	//To List All Users
 	   
 	
-		public List<User>getAllUsers()
+		public List<Users>getAllUsers()
 		{
 			return userRepo.findAll();
 		}
@@ -45,7 +47,7 @@ public class UserService
 	//To get User By Id
 		
 		
-		public Optional<User> getUserbyId(long id)
+		public Optional<Users> getUserbyId(long id)
 		{
 			return userRepo.findById(id);
 		}
@@ -57,10 +59,10 @@ public class UserService
 				
 				}
     //To update User
-				public User updateUserById(long id,UserRequest userRequest) 
+				public Users updateUserById(long id,UserRequest userRequest) 
 				{
 					  
-					  User user = User.build(id,userRequest.getName(),userRequest.getEmail(),userRequest.getPassword(),userRequest.getAbout(),null);
+					  Users user = Users.build(id,userRequest.getName(),userRequest.getEmail(),userRequest.getPassword(),userRequest.getAbout(),null);
 					  return userRepo.save(user);
 					
 				}

@@ -1,6 +1,7 @@
 package com.example.demo.service;
 
-import java.util.Date;
+import java.util.Date
+;
 import java.util.Optional;
 
 import javax.validation.Valid;
@@ -9,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.demo.Model.Post;
-import com.example.demo.Model.User;
+import com.example.demo.Model.Users;
 import com.example.demo.dto.PostRequest;
 import com.example.demo.dto.UserRequest;
 import com.example.demo.repo.PostRepo;

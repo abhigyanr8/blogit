@@ -21,7 +21,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor(staticName="build")
 @Entity
-public class User 
+public class Users
 {
 	@Id
     

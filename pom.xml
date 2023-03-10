@@ -25,21 +25,21 @@
     <version>1.6.9</version>
 </dependency>
 
- <!-- https://mvnrepository.com/artifact/com.auth0/java-jwt
+ <!-- https://mvnrepository.com/artifact/com.auth0/java-jwt -->
 <dependency>
     <groupId>com.auth0</groupId>
     <artifactId>java-jwt</artifactId>
     <version>4.2.2</version>
 </dependency>
- -->
+
  
- <!-- https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt 
+ <!-- https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt -->
 <dependency>
     <groupId>io.jsonwebtoken</groupId>
     <artifactId>jjwt</artifactId>
     <version>0.9.0</version>
 </dependency>
--->
+
 
 <!-- https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api -->
 <dependency>
@@ -50,12 +50,12 @@
 
 
  
- <!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-core 
+ <!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-core  -->
 <dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
- -->
+
 	
 <dependency>
 			<groupId>org.springframework.boot</groupId>
